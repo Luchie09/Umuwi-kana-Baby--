@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Jeep"
-run/main_scene="uid://lycst86bm6q"
+run/main_scene="uid://c7urige1gurcg"
 config/features=PackedStringArray("4.4", "Mobile")
 config/icon="res://icon.svg"
 
