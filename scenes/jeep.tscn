@@ -1,0 +1,31 @@
+[gd_scene load_steps=5 format=3 uid="uid://gruwwrq05ala"]
+
+[ext_resource type="Script" uid="uid://bcopd1b6yeesf" path="res://scripts/jeep.gd" id="1_1ybpa"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_x4y2x"]
+load_path = "res://.godot/imported/Jeep.png-5e11cdf42bcb24f3c332e6f5858db4ed.ctex"
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1ybpa"]
+size = Vector2(409, 183)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ymbgh"]
+size = Vector2(70, 177)
+
+[node name="Jeep" type="CharacterBody2D"]
+script = ExtResource("1_1ybpa")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = SubResource("CompressedTexture2D_x4y2x")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-12.5, -47.5)
+shape = SubResource("RectangleShape2D_1ybpa")
+
+[node name="DetectionArea" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DetectionArea"]
+position = Vector2(235, -48)
+shape = SubResource("RectangleShape2D_ymbgh")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(289, -268)

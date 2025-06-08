@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://bej460yu678gr"]
+
+[ext_resource type="Script" uid="uid://dgvvk4ctvb7cg" path="res://character.gd" id="1_wk3fw"]
+[ext_resource type="Texture2D" uid="uid://dyxy514pkcw6d" path="res://assets/Passenger 1.png" id="2_ubgd8"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_rkhd4"]
+radius = 47.0
+height = 180.0
+
+[node name="Character" type="Area2D" groups=["characters"]]
+script = ExtResource("1_wk3fw")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(3, 5)
+shape = SubResource("CapsuleShape2D_rkhd4")
+
+[node name="Passenger1" type="Sprite2D" parent="."]
+position = Vector2(-0.999999, 5.5)
+scale = Vector2(0.195556, 0.185556)
+texture = ExtResource("2_ubgd8")

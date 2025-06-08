@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://pcskx07h5yc2"]
+
+[ext_resource type="Script" uid="uid://dgvvk4ctvb7cg" path="res://character.gd" id="1_811ny"]
+[ext_resource type="Texture2D" uid="uid://da3grjv0joc8n" path="res://assets/Bystander.png" id="2_hprwy"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_rkhd4"]
+radius = 47.0
+height = 180.0
+
+[node name="Character" type="Area2D" groups=["characters"]]
+script = ExtResource("1_811ny")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0.624992, 11.375)
+scale = Vector2(0.2075, 0.191944)
+texture = ExtResource("2_hprwy")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(3, 5)
+shape = SubResource("CapsuleShape2D_rkhd4")
