@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://beqi4kqlvo3ot"
+path="res://.godot/imported/Bodysnatchers (8-Bit Version) - Radiohead.mp3-348257aabddfba03b70dc81de082c661.mp3str"
+
+[deps]
+
+source_file="res://assets/Bodysnatchers (8-Bit Version) - Radiohead.mp3"
+dest_files=["res://.godot/imported/Bodysnatchers (8-Bit Version) - Radiohead.mp3-348257aabddfba03b70dc81de082c661.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

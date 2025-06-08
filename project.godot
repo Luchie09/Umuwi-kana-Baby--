@@ -15,6 +15,14 @@ run/main_scene="uid://lycst86bm6q"
 config/features=PackedStringArray("4.4", "Mobile")
 config/icon="res://icon.svg"
 
+[autoload]
+
+BgMusic="*res://bg_music.tscn"
+
+[display]
+
+window/stretch/aspect="expand"
+
 [input]
 
 stop_jeep={
