@@ -2,7 +2,7 @@ extends Node2D
 
 @onready var jeep = $Jeep
 @onready var timer = $PassengerTimer
-@onready var characters_container = $Characters
+@onready var characters_container = $Character
 
 @export var passenger_scene_1: PackedScene
 @export var passenger_scene_2: PackedScene

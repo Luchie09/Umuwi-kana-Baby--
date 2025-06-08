@@ -1,6 +1,6 @@
 [gd_scene load_steps=11 format=4 uid="uid://lycst86bm6q"]
 
-[ext_resource type="Script" path="res://scenes/game.gd" id="1_lbhrr"]
+[ext_resource type="Script" uid="uid://hq0qcv6iygnn" path="res://scenes/game.gd" id="1_lbhrr"]
 [ext_resource type="PackedScene" uid="uid://dwuvefxqayorl" path="res://scenes/parallax_background.tscn" id="2_iywne"]
 [ext_resource type="Texture2D" uid="uid://bonuvokdmcb6d" path="res://assets/Roadtiles.png" id="2_lbhrr"]
 [ext_resource type="PackedScene" uid="uid://gruwwrq05ala" path="res://scenes/jeep.tscn" id="3_iywne"]
