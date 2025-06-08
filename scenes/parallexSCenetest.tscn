@@ -1,0 +1,45 @@
+[gd_scene load_steps=5 format=3 uid="uid://oldbprr8r6vq"]
+
+[ext_resource type="Script" uid="uid://doodxmyjcvcaj" path="res://scenes/parallax_background.gd" id="1_4sboa"]
+[ext_resource type="Texture2D" uid="uid://bdepc2jnn3acd" path="res://assets/back.png" id="2_s1jk0"]
+[ext_resource type="Texture2D" uid="uid://5aw58vgqat0p" path="res://assets/Buildings.png" id="3_v25c1"]
+[ext_resource type="Texture2D" uid="uid://bonuvokdmcb6d" path="res://assets/Roadtiles.png" id="4_w4ria"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+script = ExtResource("1_4sboa")
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2(-15, 129)
+motion_mirroring = Vector2(1203, 0)
+
+[node name="Back" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(602, 199)
+scale = Vector2(3.1849, 3.0125)
+texture = ExtResource("2_s1jk0")
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="ParallaxBackground"]
+script = ExtResource("1_4sboa")
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="ParallaxBackground/ParallaxBackground"]
+position = Vector2(-22, -38)
+motion_scale = Vector2(0.7, 0.7)
+motion_mirroring = Vector2(1203, 0)
+
+[node name="Buildings" type="Sprite2D" parent="ParallaxBackground/ParallaxBackground/ParallaxLayer2"]
+position = Vector2(579, 482)
+scale = Vector2(1.44556, 0.61375)
+texture = ExtResource("3_v25c1")
+
+[node name="ParallaxBackground2" type="ParallaxBackground" parent="ParallaxBackground"]
+script = ExtResource("1_4sboa")
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="ParallaxBackground/ParallaxBackground2"]
+position = Vector2(-22, -38)
+motion_mirroring = Vector2(1203, 0)
+
+[node name="Buildings" type="Sprite2D" parent="ParallaxBackground/ParallaxBackground2/ParallaxLayer2"]
+position = Vector2(581, 435)
+scale = Vector2(1.553, 1.41237)
+texture = ExtResource("4_w4ria")

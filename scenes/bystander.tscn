@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://pcskx07h5yc2"]
 
-[ext_resource type="Script" uid="uid://dgvvk4ctvb7cg" path="res://character.gd" id="1_811ny"]
+[ext_resource type="Script" uid="uid://yvis0rc2bcrt" path="res://scenes/bystander.gd" id="1_811ny"]
 [ext_resource type="Texture2D" uid="uid://da3grjv0joc8n" path="res://assets/Bystander.png" id="2_hprwy"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_rkhd4"]

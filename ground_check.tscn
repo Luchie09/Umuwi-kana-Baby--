@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://dypif08lfkkye"]
+
+[ext_resource type="Texture2D" uid="uid://bdepc2jnn3acd" path="res://assets/back.png" id="1_2aq3m"]
+[ext_resource type="Texture2D" uid="uid://bonuvokdmcb6d" path="res://assets/Roadtiles.png" id="1_06qkh"]
+
+[node name="Node2D" type="Node2D"]
+position = Vector2(368, 446)
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="."]
+
+[node name="Parallax2D" type="Parallax2D" parent="ParallaxLayer"]
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer/Parallax2D"]
+position = Vector2(-197, -57)
+texture = ExtResource("1_2aq3m")
+
+[node name="Parallax2D2" type="Parallax2D" parent="ParallaxLayer"]
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer/Parallax2D2"]
+texture = ExtResource("1_06qkh")

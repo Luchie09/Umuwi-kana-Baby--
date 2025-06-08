@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://ddjh2mrbp870m"]
 
-[ext_resource type="Script" uid="uid://dgvvk4ctvb7cg" path="res://character.gd" id="1_cs8xj"]
+[ext_resource type="Script" uid="uid://1e6ukkb8g0wv" path="res://scenes/passenger_2.gd" id="1_cs8xj"]
 [ext_resource type="Texture2D" uid="uid://d38iodc0mty5" path="res://assets/Passenger 2.png" id="2_k2ov6"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_rkhd4"]
