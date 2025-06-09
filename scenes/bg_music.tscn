@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://cedr4lwmh3nye"]
+
+[ext_resource type="AudioStream" uid="uid://beqi4kqlvo3ot" path="res://assets/Bodysnatchers (8-Bit Version) - Radiohead.mp3" id="1_f6gl3"]
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D"]
+stream = ExtResource("1_f6gl3")
+autoplay = true
